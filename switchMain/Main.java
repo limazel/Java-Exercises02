@@ -1,3 +1,5 @@
+package switchMain;
+
 public class Main {
     public static void main(String[] args) {
         char grade = 'F';

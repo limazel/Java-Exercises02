@@ -1,3 +1,5 @@
+package conditionals;
+
 public class RecapOne {
     public static void main(String[] args) {
         int sayi1 = 19;

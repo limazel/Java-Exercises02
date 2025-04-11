@@ -1,3 +1,5 @@
+package degiskenlerVeriTipleri;
+
 public class Main {
     public static void main(String[] args) {
         int isciSayisi = 12;
