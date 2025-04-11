@@ -12,5 +12,13 @@ public class Main {
             i++;
         }
         System.out.println("End of while loop");
+
+        int j = 100;
+        do {
+            System.out.println(j);
+            j++;
+        } while (j < 100);
     }
+
+
 }
