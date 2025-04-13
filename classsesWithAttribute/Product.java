@@ -1,6 +1,20 @@
 package classsesWithAttribute;
 
 public class Product {
+    // Constructor
+    public Product(int id, String name, String description, double price, int stockAmount, String color) {
+        System.out.println("Constructor called");
+        _id = id;
+        _name = name;
+        _description = description;
+        _price = price;
+        _stockAmount = stockAmount;
+        _color = color;
+    }
+    // Default constructor
+    public Product() {
+        System.out.println("Default constructor called");
+    }
     // Attributes || Fields
     private int _id;
     private String _name;

@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         Product product = new Product();
+        Product product2 = new Product(2, "Iphone 15 Plus", "Apple's Plus phone", 49000, 50, "White");
         product.setId(1);
         product.setName("Iphone 15 Pro Max");
         product.setDescription("Apple's latest phone");
@@ -14,6 +15,7 @@ public class Main {
 
          
         System.out.println(product.getCode());   
+        System.out.println(product2.getCode());
     }
 
 }

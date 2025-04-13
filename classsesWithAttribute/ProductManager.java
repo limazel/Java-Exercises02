@@ -2,6 +2,6 @@ package classsesWithAttribute;
 
 public class ProductManager {
     public void add(Product product) {
-        System.out.println("Product added: " + product.name);
+        System.out.println("Product added: " + product.getName());
     }
 }
