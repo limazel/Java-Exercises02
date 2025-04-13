@@ -1,9 +1,10 @@
 package classsesWithAttribute;
 
 public class Product {
-    int id;
-    String name;
-    String description;
-    int price;
-    int stockAmount;
+    private int id;
+    private String name;
+    private String description;
+    private double price;
+    private int stockAmount;
+    private String color;
 }
