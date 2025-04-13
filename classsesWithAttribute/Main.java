@@ -4,14 +4,16 @@ public class Main {
     public static void main(String[] args) {
 
         Product product = new Product();
-        product.id = 1;
-        product.name = "Phone";
-        product.description = "Apple Phone";
-        product.price = 1000;
-        product.stockAmount = 10;
+        product.setId(1);
+        product.setName("Iphone 15 Pro Max");
+        product.setDescription("Apple's latest phone");
+        product.setPrice(79000);
+        product.setStockAmount(100);
+        product.setColor("Black");
+        product.getCode();
 
-        ProductManager productManager = new ProductManager();
-        productManager.add(product);        
+         
+        System.out.println(product.getCode());   
     }
 
 }
