@@ -6,5 +6,10 @@ public class Main {
         customerManager.addCustomer();
         customerManager.removeCustomer();
         customerManager.updateCustomer();
+
+
+        FourOperations fourOperations = new FourOperations();
+        int result = fourOperations.add(5, 3);
+        System.out.println("Addition Result: " + result);
     }   
 }
