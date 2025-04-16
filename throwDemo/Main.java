@@ -9,13 +9,13 @@ public class Main {
         System.out.println("Balance" + manager.getBalance());
         try {
             manager.withdraw(90);
-        } catch (Exception err) {
+        } catch (BalanceInsufficientException err) {
             System.out.println("Error: " + err.getMessage());
         }
         System.out.println("Balance" + manager.getBalance());
         try {
             manager.withdraw(90);
-        } catch (Exception err) {
+        } catch (BalanceInsufficientException err) {
             System.out.println("Error: " + err.getMessage());
         }
         System.out.println("Balance" + manager.getBalance());
