@@ -1,10 +1,12 @@
 package workingWithFiles;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-       getFileInfo();
+        readFile();
     }
 
     public static void createFile() {
@@ -30,6 +32,20 @@ public class Main {
             System.out.println("File size in bytes: " + file.length());
         } else {
 
+        }
+    }
+
+    public static void readFile() {
+        File file = new File("/Users/azad/Desktop/examples/java-BTK/workingWithFiles/student.txt");
+        try {
+            Scanner reader = new Scanner(file);
+            while( reader.hasNextLine()) {
+                String line = reader.nextLine();
+                System.out.println(line);
+            }
+            reader.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
         }
     }
 }
